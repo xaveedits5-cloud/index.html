@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Online Income Blueprint — Build Multiple Income Streams Online</title>
+<meta name="description" content="A step-by-step blueprint for beginners to learn digital marketing, affiliate marketing, content creation and AI tools — and start building real online income streams.">
+<meta name="theme-color" content="#0A0F1C">
+
+<!-- Open Graph -->
+<meta property="og:title" content="The Online Income Blueprint">
+<meta property="og:description" content="The proven roadmap that helps beginners start earning online with digital skills, affiliate marketing and AI tools.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  /* =========================================================
+     0. RESET + TOKENS
+  ========================================================= */
+  *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  html, body{ height:100%; }
+
+  :root{
+    /* Color tokens */
+    --navy-950:#05080F;
+    --navy-900:#0A0F1C;
+    --navy-850:#0D1426;
+    --navy-800:#121B2E;
+    --navy-700:#1B2740;
+    --navy-600:#283655;
+    --line:rgba(255,255,255,0.08);
+    --white:#F5F7FB;
+    --muted:#94A1B8;
+    --muted-soft:#6C7790;
+
+    --gold:#E8B84B;
+    --gold-bright:#F7D274;
+    --gold-dim:rgba(232,184,75,0.14);
+
+    --green:#2BC97A;
+    --green-bright:#46DE94;
+    --green-dim:rgba(43,201,122,0.14);
+
+    --whatsapp:#25D366;
+
+    --radius-sm:10px;
+    --radius-md:16px;
+    --radius-lg:26px;
+    --radius-pill:999px;
+
+    --container:1180px;
+    --container-narrow:760px;
+
+    --ff-display:'Sora', sans-serif;
+    --ff-body:'Inter', sans-serif;
+    --ff-mono:'JetBrains Mono', monospace;
+
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *,*::before,*::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+  }
+
+  body{
+    background:var(--navy-900);
+    color:var(--white);
+    font-family:var(--ff-body);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  ul{ list-style:none; }
+  button{ font:inherit; cursor:pointer; }
+  :focus-visible{ outline:2px solid var(--gold-bright); outline-offset:3px; }
+
+  .container{ width:100%; max-width:var(--container); margin:0 auto; padding:0 20px; }
+  .container-narrow{ width:100%; max-width:var(--container-narrow); margin:0 auto; padding:0 20px; }
+
+  .eyebrow{
+    font-family:var(--ff-mono);
+    font-size:12.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:7px; height:7px;
+    border-radius:2px;
+    background:var(--gold);
+    display:inline-block;
+    transform:rotate(45deg);
+  }
+
+  h1,h2,h3,h4{ font-family:var(--ff-display); font-weight:700; letter-spacing:-0.01em; }
+
+  .section-head{ max-width:640px; margin-bottom:48px; }
+  .section-title{ font-size:clamp(28px,4.4vw,42px); line-height:1.15; margin-top:14px; }
+  .section-sub{ color:var(--muted); margin-top:14px; font-size:16.5px; max-width:560px; }
+
+  .text-gold{ color:var(--gold); }
+  .text-green{ color:var(--green); }
+
+  section{ position:relative; padding:88px 0; }
+
+  /* =========================================================
+     Buttons
+  ========================================================= */
+  .btn{
+    font-family:var(--ff-body);
+    font-weight:600;
+    font-size:15.5px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    padding:15px 28px;
+    border-radius:var(--radius-pill);
+    border:1.5px solid transparent;
+    transition:transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
+    white-space:nowrap;
+  }
+  .btn svg{ width:18px; height:18px; flex-shrink:0; }
+  .btn-block{ width:100%; }
+
+  .btn-primary{
+    background:linear-gradient(135deg,var(--gold-bright),var(--gold));
+    color:var(--navy-950);
+    box-shadow:0 10px 28px rgba(232,184,75,0.22);
+  }
+  .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 14px 34px rgba(232,184,75,0.34); }
+  .btn-primary:active{ transform:translateY(0); }
+
+  .btn-whatsapp{
+    background:transparent;
+    border-color:rgba(43,201,122,0.55);
+    color:var(--white);
+  }
+  .btn-whatsapp svg{ color:var(--green-bright); }
+  .btn-whatsapp:hover{
+    background:var(--green);
+    border-color:var(--green);
+    color:var(--navy-950);
+  }
+  .btn-whatsapp:hover svg{ color:var(--navy-950); }
+
+  .btn-ghost{
+    background:transparent;
+    border-color:var(--line);
+    color:var(--white);
+    font-size:14.5px;
+    padding:11px 20px;
+  }
+  .btn-ghost:hover{ border-color:var(--gold); color:var(--gold-bright); }
+
+  /* =========================================================
+     1. NAV
+  ========================================================= */
+  .nav{
+    position:sticky; top:0; z-index:60;
+    background:rgba(10,15,28,0.78);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav__row{
+    display:flex; align-items:center; justify-content:space-between;
+    height:72px;
+  }
+  .nav__logo{
+    display:flex; align-items:center; gap:10px;
+    font-family:var(--ff-display); font-weight:700; font-size:16.5px;
+  }
+  .nav__logo-mark{
+    width:34px; height:34px; border-radius:9px;
+    background:linear-gradient(135deg,var(--gold-bright),var(--green));
+    display:flex; align-items:center; justify-content:center;
+    color:var(--navy-950); font-family:var(--ff-mono); font-weight:600; font-size:14px;
+    flex-shrink:0;
+  }
+  .nav__logo-text span{ color:var(--gold); }
+
+  .nav__links{
+    display:none;
+    align-items:center; gap:34px;
+    font-size:14.5px; font-weight:500; color:var(--muted-soft);
+  }
+  .nav__links a{ transition:color .2s var(--ease); position:relative; }
+  .nav__links a:hover{ color:var(--white); }
+
+  .nav__actions{ display:flex; align-items:center; gap:12px; }
+  .nav__cta{ display:none; }
+  .nav__toggle{
+    display:flex; align-items:center; justify-content:center;
+    width:40px; height:40px; border-radius:10px;
+    background:var(--navy-800); border:1px solid var(--line);
+    color:var(--white);
+  }
+  .nav__toggle svg{ width:20px; height:20px; }
+
+  .nav__mobile{
+    max-height:0; overflow:hidden;
+    background:var(--navy-850);
+    border-bottom:1px solid var(--line);
+    transition:max-height .35s var(--ease);
+  }
+  .nav__mobile.is-open{ max-height:320px; }
+  .nav__mobile-inner{ padding:18px 20px 26px; display:flex; flex-direction:column; gap:4px; }
+  .nav__mobile a{
+    padding:13px 4px; font-size:15.5px; font-weight:500;
+    border-bottom:1px solid var(--line); color:var(--muted-soft);
+  }
+  .nav__mobile a:hover{ color:var(--white); }
+  .nav__mobile .btn{ margin-top:14px; }
+
+  @media(min-width:1024px){
+    .nav__links{ display:flex; }
+    .nav__cta{ display:inline-flex; }
+    .nav__toggle{ display:none; }
+  }
+
+  /* =========================================================
+     2. HERO
+  ========================================================= */
+  .hero{
+    padding:76px 0 90px;
+    position:relative;
+    overflow:hidden;
+    background:
+      radial-gradient(620px 420px at 12% -8%, rgba(232,184,75,0.16), transparent 60%),
+      radial-gradient(620px 460px at 92% 8%, rgba(43,201,122,0.14), transparent 60%);
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size:46px 46px;
+    -webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 20%, black 40%, transparent 85%);
+    mask-image:radial-gradient(ellipse 80% 60% at 50% 20%, black 40%, transparent 85%);
+    pointer-events:none;
+  }
+  .hero__inner{ position:relative; text-align:center; }
+  .hero__badge{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:var(--ff-mono); font-size:12px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--gold-bright);
+    background:var(--gold-dim);
+    border:1px solid rgba(232,184,75,0.3);
+    padding:8px 16px; border-radius:var(--radius-pill);
+  }
+  .hero__title{
+    font-size:clamp(32px,6.4vw,60px);
+    line-height:1.1;
+    margin:26px auto 0;
+    max-width:920px;
+    letter-spacing:-0.015em;
+  }
+  .hero__title em{ font-style:normal; color:var(--gold); }
+  .hero__sub{
+    margin:24px auto 0;
+    max-width:600px;
+    color:var(--muted);
+    font-size:17.5px;
+  }
+  .hero__actions{
+    margin-top:38px;
+    display:flex; flex-direction:column; align-items:center; gap:14px;
+  }
+  .hero__actions .btn{ width:100%; max-width:320px; }
+  @media(min-width:560px){
+    .hero__actions{ flex-direction:row; justify-content:center; }
+    .hero__actions .btn{ width:auto; }
+  }
+
+  .hero__trust{
+    margin-top:54px;
+    display:grid; grid-template-columns:repeat(2,1fr); gap:14px;
+    max-width:620px; margin-left:auto; margin-right:auto;
+  }
+  @media(min-width:640px){ .hero__trust{ grid-template-columns:repeat(4,1fr); } }
+  .trust-item{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    font-family:var(--ff-mono); font-size:12px; letter-spacing:.03em;
+    color:var(--muted-soft);
+    border:1px solid var(--line); border-radius:var(--radius-sm);
+    padding:13px 10px; background:rgba(255,255,255,0.02);
+  }
+  .trust-item svg{ width:15px; height:15px; color:var(--green-bright); flex-shrink:0; }
+
+  /* =========================================================
+     Reveal animation
+  ========================================================= */
+  .reveal{ opacity:0; transform:translateY(22px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+  .reveal.in-view{ opacity:1; transform:translateY(0); }
+  .reveal-delay-1.in-view{ transition-delay:.08s; }
+  .reveal-delay-2.in-view{ transition-delay:.16s; }
+  .reveal-delay-3.in-view{ transition-delay:.24s; }
+
+  /* =========================================================
+     3. PROBLEM
+  ========================================================= */
+  .problem{ background:var(--navy-900); }
+  .problem-grid{
+    display:grid; gap:14px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  }
+  .problem-card{
+    border:1px solid var(--line);
+    background:var(--navy-850);
+    border-radius:var(--radius-md);
+    padding:24px 22px;
+    display:flex; flex-direction:column; gap:12px;
+    transition:border-color .25s var(--ease), transform .25s var(--ease);
+  }
+  .problem-card:hover{ border-color:rgba(232,184,75,0.4); transform:translateY(-3px); }
+  .problem-card__tag{
+    font-family:var(--ff-mono); font-size:12px; color:var(--gold);
+    letter-spacing:.08em;
+  }
+  .problem-card__title{ font-family:var(--ff-display); font-size:17px; font-weight:600; }
+  .problem-card__text{ color:var(--muted); font-size:14.5px; }
+
+  /* =========================================================
+     4. SOLUTION / CURRICULUM
+  ========================================================= */
+  .solution{ background:var(--navy-950); }
+  .timeline{ position:relative; max-width:780px; margin:0 auto; }
+  .timeline::before{
+    content:"";
+    position:absolute; left:23px; top:6px; bottom:6px; width:2px;
+    background:repeating-linear-gradient(to bottom, var(--gold) 0 6px, transparent 6px 13px);
+    opacity:.55;
+  }
+  @media(min-width:640px){ .timeline::before{ left:27px; } }
+
+  .module{
+    position:relative;
+    display:flex; gap:20px;
+    padding:20px 0;
+  }
+  .module__node{
+    flex-shrink:0;
+    width:48px; height:48px; border-radius:13px;
+    background:var(--navy-850);
+    border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center;
+    color:var(--gold-bright);
+    position:relative; z-index:1;
+  }
+  .module__node svg{ width:21px; height:21px; }
+  @media(min-width:640px){ .module__node{ width:56px; height:56px; } }
+
+  .module__body{
+    background:var(--navy-850);
+    border:1px solid var(--line);
+    border-radius:var(--radius-md);
+    padding:18px 20px;
+    flex:1;
+    transition:border-color .25s var(--ease), transform .25s var(--ease);
+  }
+  .module:hover .module__body{ border-color:rgba(43,201,122,0.4); transform:translateX(3px); }
+  .module__tag{ font-family:var(--ff-mono); font-size:11.5px; color:var(--green-bright); letter-spacing:.1em; }
+  .module__title{ font-family:var(--ff-display); font-size:18px; font-weight:600; margin-top:6px; }
+  .module__text{ color:var(--muted); font-size:14.5px; margin-top:7px; }
+
+  /* =========================================================
+     5. BENEFITS
+  ========================================================= */
+  .benefits{ background:var(--navy-900); }
+  .benefits-grid{
+    display:grid; gap:14px;
+    grid-template-columns:1fr;
+  }
+  @media(min-width:680px){ .benefits-grid{ grid-template-columns:1fr 1fr; } }
+  .benefit-item{
+    display:flex; align-items:flex-start; gap:14px;
+    border:1px solid var(--line);
+    background:var(--navy-850);
+    border-radius:var(--radius-md);
+    padding:20px;
+  }
+  .benefit-item__icon{
+    flex-shrink:0;
+    width:34px; height:34px; border-radius:10px;
+    background:var(--green-dim);
+    display:flex; align-items:center; justify-content:center;
+    color:var(--green-bright);
+  }
+  .benefit-item__icon svg{ width:17px; height:17px; }
+  .benefit-item p{ font-size:15px; color:var(--white); padding-top:6px; }
+
+  /* =========================================================
+     6. TESTIMONIALS
+  ========================================================= */
+  .testimonials{ background:var(--navy-950); }
+  .test-grid{
+    display:grid; gap:18px;
+    grid-template-columns:1fr;
+  }
+  @media(min-width:768px){ .test-grid{ grid-template-columns:repeat(3,1fr); } }
+
+  .test-card{
+    background:var(--navy-850);
+    border:1px solid var(--line);
+    border-radius:var(--radius-lg);
+    padding:26px 24px;
+    position:relative;
+  }
+  .test-card::before{
+    content:"";
+    position:absolute; top:0; left:24px; width:34px; height:2px;
+    background:var(--gold);
+  }
+  .test-card__stars{ display:flex; gap:3px; color:var(--gold); margin-bottom:14px; }
+  .test-card__stars svg{ width:15px; height:15px; }
+  .test-card__quote{ font-size:15px; color:var(--muted-soft); line-height:1.65; }
+  .test-card__person{ display:flex; align-items:center; gap:12px; margin-top:22px; }
+  .avatar{
+    width:44px; height:44px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--ff-display); font-weight:700; font-size:14.5px;
+    color:var(--navy-950); flex-shrink:0;
+  }
+  .test-card__name{ font-weight:600; font-size:14.5px; color:var(--white); }
+  .test-card__role{ font-size:12.5px; color:var(--muted-soft); margin-top:2px; }
+
+  /* =========================================================
+     7. FAQ
+  ========================================================= */
+  .faq{ background:var(--navy-900); }
+  .faq-item{
+    border-bottom:1px solid var(--line);
+  }
+  .faq-item:first-child{ border-top:1px solid var(--line); }
+  .faq-q{
+    width:100%;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:16px;
+    background:transparent; border:none; color:var(--white);
+    text-align:left;
+    padding:21px 2px;
+    font-family:var(--ff-display); font-weight:600; font-size:15.5px;
+  }
+  .faq-q__tag{ font-family:var(--ff-mono); color:var(--gold); font-size:12.5px; margin-right:10px; }
+  .faq-q svg{ width:18px; height:18px; flex-shrink:0; color:var(--muted-soft); transition:transform .3s var(--ease); }
+  .faq-item.is-open .faq-q svg{ transform:rotate(180deg); color:var(--gold-bright); }
+  .faq-a{
+    max-height:0; overflow:hidden;
+    transition:max-height .35s var(--ease);
+  }
+  .faq-a__inner{ padding:0 2px 22px; color:var(--muted); font-size:14.5px; max-width:640px; }
+
+  /* =========================================================
+     8. FINAL CTA
+  ========================================================= */
+  .final-cta{
+    background:var(--navy-950);
+    text-align:center;
+    overflow:hidden;
+    position:relative;
+  }
+  .final-cta::before{
+    content:"";
+    position:absolute; inset:0;
+    background:radial-gradient(560px 320px at 50% 0%, rgba(232,184,75,0.18), transparent 70%);
+    pointer-events:none;
+  }
+  .final-cta__inner{ position:relative; }
+  .final-cta h2{ font-size:clamp(28px,5vw,44px); line-height:1.18; }
+  .final-cta p{ color:var(--muted); max-width:520px; margin:18px auto 0; font-size:16.5px; }
+  .final-cta .btn{ margin-top:32px; }
+
+  /* =========================================================
+     9. FOOTER
+  ========================================================= */
+  .footer{ background:var(--navy-950); border-top:1px solid var(--line); padding:54px 0 110px; }
+  @media(min-width:1024px){ .footer{ padding-bottom:54px; } }
+  .footer__top{
+    display:flex; flex-direction:column; gap:28px;
+    padding-bottom:30px; border-bottom:1px solid var(--line);
+  }
+  @media(min-width:680px){ .footer__top{ flex-direction:row; align-items:center; justify-content:space-between; } }
+  .footer__links{ display:flex; flex-wrap:wrap; gap:22px; font-size:14px; color:var(--muted-soft); }
+  .footer__links a:hover{ color:var(--gold-bright); }
+  .footer__bottom{
+    display:flex; flex-direction:column; gap:10px;
+    padding-top:24px; font-size:12.5px; color:var(--muted-soft);
+  }
+  @media(min-width:680px){ .footer__bottom{ flex-direction:row; justify-content:space-between; align-items:center; } }
+  .footer__disclaimer{ max-width:620px; color:var(--muted-soft); opacity:.8; line-height:1.6; }
+
+  /* =========================================================
+     10. STICKY MOBILE CTA + FLOATING WHATSAPP
+  ========================================================= */
+  .sticky-cta{
+    position:fixed; left:0; right:0; bottom:0; z-index:70;
+    display:flex; gap:10px;
+    padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+    background:rgba(10,15,28,0.92);
+    backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+    border-top:1px solid var(--line);
+  }
+  .sticky-cta .btn-primary{ flex:1; padding:13px 18px; font-size:14.5px; }
+  .sticky-cta .btn-icon{
+    width:48px; height:48px; flex-shrink:0; padding:0;
+    border-radius:var(--radius-pill);
+    background:var(--green);
+    color:var(--navy-950);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .sticky-cta .btn-icon svg{ width:21px; height:21px; }
+  @media(min-width:1024px){ .sticky-cta{ display:none; } }
+
+  .wa-float{
+    position:fixed; right:18px; bottom:90px; z-index:65;
+    width:54px; height:54px; border-radius:50%;
+    background:var(--green);
+    display:flex; align-items:center; justify-content:center;
+    color:var(--navy-950);
+    box-shadow:0 10px 24px rgba(43,201,122,0.35);
+    transition:transform .25s var(--ease);
+  }
+  .wa-float svg{ width:25px; height:25px; }
+  .wa-float:hover{ transform:scale(1.07); }
+  @media(min-width:1024px){ .wa-float{ bottom:24px; } }
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+     NAV
+========================================================= -->
+<header class="nav">
+  <div class="container nav__row">
+    <a href="#hero" class="nav__logo">
+      <span class="nav__logo-mark">OIB</span>
+      <span class="nav__logo-text">Online Income <span>Blueprint</span></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#curriculum">Curriculum</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="#enroll" class="btn btn-primary nav__cta">Get Instant Access</a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMobile" aria-label="Toggle menu">
+        <svg id="iconMenu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        <svg id="iconClose" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" style="display:none"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav__mobile" id="navMobile">
+    <div class="nav__mobile-inner">
+      <a href="#curriculum">Curriculum</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#enroll" class="btn btn-primary btn-block">Get Instant Access</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- =========================================================
+       HERO
+  ========================================================= -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <span class="hero__badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+        Digital Income Roadmap
+      </span>
+
+      <h1 class="hero__title">
+        Learn How to Build <em>Multiple Online Income Streams</em> Using Digital Skills, Affiliate Marketing, and AI Tools
+      </h1>
+
+      <p class="hero__sub">
+        Discover the proven roadmap that helps beginners start earning online by learning valuable digital skills, attracting customers, and leveraging AI for productivity.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#enroll" class="btn btn-primary" id="ctaHero">
+          Get Instant Access
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </a>
+        <a href="#" class="btn btn-whatsapp wa-link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><circle cx="9" cy="11.5" r="1" fill="currentColor" stroke="none"/><circle cx="12.5" cy="11.5" r="1" fill="currentColor" stroke="none"/><circle cx="16" cy="11.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <div class="hero__trust">
+        <div class="trust-item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Beginner Friendly
+        </div>
+        <div class="trust-item reveal reveal-delay-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Mobile Friendly
+        </div>
+        <div class="trust-item reveal reveal-delay-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Step-by-Step Training
+        </div>
+        <div class="trust-item reveal reveal-delay-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Lifetime Access
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PROBLEM
+  ========================================================= -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Problem</span>
+        <h2 class="section-title">Why Most People Struggle to Make Money Online</h2>
+        <p class="section-sub">It's rarely a motivation problem. It's a roadmap problem — too much noise, not enough direction.</p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card reveal">
+          <span class="problem-card__tag">01 / Overload</span>
+          <h3 class="problem-card__title">Information Overload</h3>
+          <p class="problem-card__text">Endless tutorials, conflicting advice, and a hundred open tabs — and still no idea where to actually start.</p>
+        </div>
+        <div class="problem-card reveal reveal-delay-1">
+          <span class="problem-card__tag">02 / Direction</span>
+          <h3 class="problem-card__title">No Clear Roadmap</h3>
+          <p class="problem-card__text">You learn one skill, jump to the next trend, and never finish anything you started.</p>
+        </div>
+        <div class="problem-card reveal reveal-delay-2">
+          <span class="problem-card__tag">03 / Execution</span>
+          <h3 class="problem-card__title">Lack of Practical Skills</h3>
+          <p class="problem-card__text">You've watched the videos, but you've never actually built, published, or sold anything yourself.</p>
+        </div>
+        <div class="problem-card reveal reveal-delay-3">
+          <span class="problem-card__tag">04 / Stability</span>
+          <h3 class="problem-card__title">Inconsistent Income</h3>
+          <p class="problem-card__text">One good week followed by three empty ones — no system, no repeatable process to rely on.</p>
+        </div>
+        <div class="problem-card reveal">
+          <span class="problem-card__tag">05 / Mindset</span>
+          <h3 class="problem-card__title">Fear of Getting Started</h3>
+          <p class="problem-card__text">Worried about getting it wrong or wasting time and money — so you keep waiting for "the right moment."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SOLUTION / CURRICULUM
+  ========================================================= -->
+  <section class="solution" id="curriculum">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+        <span class="eyebrow" style="justify-content:center;width:100%;">The Solution</span>
+        <h2 class="section-title">The Complete Blueprint</h2>
+        <p class="section-sub" style="margin-left:auto;margin-right:auto;">Eight connected modules. One clear path — from zero experience to your first online income stream.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="module reveal">
+          <div class="module__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg></div>
+          <div class="module__body">
+            <span class="module__tag">MOD.01</span>
+            <h3 class="module__title">Digital Marketing Fundamentals</h3>
+            <p class="module__text">The core principles behind every successful online business — funnels, offers, and audience psychology.</p>
+          </div>
+        </div>
+
+        <div class="module reveal">
+          <div class="module__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/></svg></div>
+          <div class="module__body">
+            <span class="module__tag">MOD.02</span>
+            <h3 class="module__title">Affiliate Marketing Mastery</h3>
+            <p class="module__text">Promote products you believe in and earn commission — without ever creating your own product.</p>
+          </div>
+        </div>
+
+        <div class="module reveal">
+          <div class="module__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="4" width="14" height="16" rx="2"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div>
+          <div class="module__body">
+            <span class="module__tag">MOD.03</span>
+            <h3 class="module__title">Content Creation Strategies</h3>
+            <p class="module__text">Turn ideas into scroll-stopping posts and videos — content that actually gets seen and shared.</p>
+          </div>
+        </div>
+
+        <div class="module reveal">
+          <div class="module__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 L14 10 L21 12 L14 14 L12 21 L10 14 L3 12 L10 10 Z"/></svg></div>
+          <div class="module__body">
+            <span class="module__tag">MOD.04</span>
+            <h3 class="module__title">AI Tools for Productivity</h3>
+            <p class="module__text">Use AI to write, design, edit, and research in a fraction of the time it used to take.</p>
+          </div>
+        </div>
+
+        <div class="module reveal">
+          <div class="module__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><line x1="6" y1="19" x2="6" y2="13"/><line x1="12" y1="19" x2="12" y2="8"/><line x1="18" y1="19" x2="18" y2="4"/></svg></div>
+          <div class="module__body">
+            <span class="module__tag">MOD.05</span>
+            <h3 class="module__title">Traffic Generation Methods</h3>
+            <p class="module__text">Get your content and offers in front of the right people, consistently — not just once.</p>
+          </div>
+        </div>
+
+        <div class="module reveal">
+          <div class="module__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><polyline points="12 16 12 8 16 11"/></svg></div>
+          <div class="module__body">
+            <span class="module__tag">MOD.06</span>
+            <h3 class="module__title">Sales and Conversion Techniques</h3>
+            <p class="module__text">Turn followers and visitors into paying customers with proven, ethical persuasion.</p>
+          </div>
+        </div>
+
+        <div class="module reveal">
+          <div class="module__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c1-4 4-6 7-6s6 2 7 6"/></svg></div>
+          <div class="module__body">
+            <span class="module__tag">MOD.07</span>
+            <h3 class="module__title">Personal Branding</h3>
+            <p class="module__text">Build a name people trust and remember — your biggest long-term asset online.</p>
+          </div>
+        </div>
+
+        <div class="module reveal">
+          <div class="module__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><polygon points="12 4 20 8.5 12 13 4 8.5"/><polyline points="4 14.5 12 19 20 14.5"/></svg></div>
+          <div class="module__body">
+            <span class="module__tag">MOD.08</span>
+            <h3 class="module__title">Scaling Online Income</h3>
+            <p class="module__text">Move from one income stream to several, and start working smarter instead of harder.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       BENEFITS
+  ========================================================= -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Outcome</span>
+        <h2 class="section-title">What You'll Achieve</h2>
+        <p class="section-sub">By the end of the blueprint, you won't just know more — you'll have built something real.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-item reveal">
+          <span class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <p>Learn high-income digital skills you can use for years, not months.</p>
+        </div>
+        <div class="benefit-item reveal reveal-delay-1">
+          <span class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <p>Understand affiliate marketing from scratch — no prior experience needed.</p>
+        </div>
+        <div class="benefit-item reveal reveal-delay-2">
+          <span class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <p>Create content that attracts genuine customers, not just passive views.</p>
+        </div>
+        <div class="benefit-item reveal">
+          <span class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <p>Use AI to work faster and smarter, without losing your own voice.</p>
+        </div>
+        <div class="benefit-item reveal reveal-delay-1">
+          <span class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <p>Build a personal brand that opens doors beyond any single platform.</p>
+        </div>
+        <div class="benefit-item reveal reveal-delay-2">
+          <span class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <p>Develop multiple income opportunities instead of relying on just one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       TESTIMONIALS
+  ========================================================= -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+        <span class="eyebrow" style="justify-content:center;width:100%;">Student Results</span>
+        <h2 class="section-title">What Students Are Saying</h2>
+      </div>
+
+      <div class="test-grid">
+        <article class="test-card reveal">
+          <div class="test-card__stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+          </div>
+          <p class="test-card__quote">"I went from watching tutorials to actually publishing my first affiliate content within two weeks. The roadmap made it obvious what to do next."</p>
+          <div class="test-card__person">
+            <span class="avatar" style="background:linear-gradient(135deg,var(--gold-bright),var(--gold));">JM</span>
+            <div>
+              <div class="test-card__name">Jordan Mensah</div>
+              <div class="test-card__role">Final-Year Student</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="test-card reveal reveal-delay-1">
+          <div class="test-card__stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+          </div>
+          <p class="test-card__quote">"The AI module alone saved me hours every week. I finally have a process I repeat, instead of starting from scratch every time."</p>
+          <div class="test-card__person">
+            <span class="avatar" style="background:linear-gradient(135deg,var(--green-bright),var(--green));">AB</span>
+            <div>
+              <div class="test-card__name">Aaliyah Brooks</div>
+              <div class="test-card__role">Part-Time Content Creator</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="test-card reveal reveal-delay-2">
+          <div class="test-card__stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.4 5.8 21 7.3 14 2 9.3 9.1 8.6"/></svg>
+          </div>
+          <p class="test-card__quote">"I'd tried three other courses before this one. This is the first time I actually finished something — and used it."</p>
+          <div class="test-card__person">
+            <span class="avatar" style="background:linear-gradient(135deg,var(--gold-bright),var(--green-bright));">DO</span>
+            <div>
+              <div class="test-card__name">Daniel Okafor</div>
+              <div class="test-card__role">Career Switcher</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FAQ
+  ========================================================= -->
+  <section class="faq" id="faq">
+    <div class="container-narrow">
+      <div class="section-head reveal">
+        <span class="eyebrow">Questions</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div id="faqList">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            <span><span class="faq-q__tag">Q.01</span>Is this suitable for beginners?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a__inner">Yes. The Online Income Blueprint is built for people starting from zero — every module assumes no prior experience and builds up step by step.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            <span><span class="faq-q__tag">Q.02</span>Do I need a laptop?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a__inner">A laptop or desktop is recommended for the practical exercises, but the video lessons and early modules can be followed comfortably from a mobile phone.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            <span><span class="faq-q__tag">Q.03</span>How long does the training take?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a__inner">Most students complete the core 8 modules in 4–6 weeks at a relaxed pace of a few hours a week. The course is self-paced, so you can move faster or slower.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            <span><span class="faq-q__tag">Q.04</span>Will I get support?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a__inner">Yes. You'll have access to direct support via WhatsApp, plus a community of other students working through the same modules.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            <span><span class="faq-q__tag">Q.05</span>Can students participate?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a__inner">Absolutely. The course was built with students and young adults in mind, and works around a tight schedule and a tight budget.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FINAL CTA
+  ========================================================= -->
+  <section class="final-cta" id="enroll">
+    <div class="container final-cta__inner">
+      <span class="eyebrow" style="justify-content:center;width:100%;">Start Today</span>
+      <h2 class="reveal">Your Future Starts With One Decision</h2>
+      <p class="reveal reveal-delay-1">Stop waiting for the perfect moment. Start building valuable skills and create opportunities online today.</p>
+      <a href="#" class="btn btn-primary reveal reveal-delay-2" id="ctaFinal">
+        Join the Training Now
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-mark">OIB</span>
+        <span class="nav__logo-text">Online Income <span>Blueprint</span></span>
+      </a>
+
+      <ul class="footer__links">
+        <li><a href="#hero">About</a></li>
+        <li><a href="#" class="wa-link" target="_blank" rel="noopener">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+
+      <a href="#" class="btn btn-whatsapp wa-link" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><circle cx="9" cy="11.5" r="1" fill="currentColor" stroke="none"/><circle cx="12.5" cy="11.5" r="1" fill="currentColor" stroke="none"/><circle cx="16" cy="11.5" r="1" fill="currentColor" stroke="none"/></svg>
+        WhatsApp
+      </a>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__disclaimer">Results vary based on effort, consistency, and individual circumstances. The Online Income Blueprint provides education and training; it does not guarantee specific income outcomes.</p>
+      <p>© 2026 Online Income Blueprint. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- =========================================================
+     STICKY MOBILE CTA
+========================================================= -->
+<div class="sticky-cta">
+  <a href="#enroll" class="btn btn-primary" id="ctaSticky">Get Instant Access</a>
+  <a href="#" class="btn-icon wa-link" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><circle cx="9" cy="11.5" r="1" fill="currentColor" stroke="none"/><circle cx="12.5" cy="11.5" r="1" fill="currentColor" stroke="none"/><circle cx="16" cy="11.5" r="1" fill="currentColor" stroke="none"/></svg>
+  </a>
+</div>
+
+<!-- Floating WhatsApp button (desktop + tablet) -->
+<a href="#" class="wa-float wa-link" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><circle cx="9" cy="11.5" r="1" fill="currentColor" stroke="none"/><circle cx="12.5" cy="11.5" r="1" fill="currentColor" stroke="none"/><circle cx="16" cy="11.5" r="1" fill="currentColor" stroke="none"/></svg>
+</a>
+
+<script>
+(function(){
+  "use strict";
+
+  /* =========================================================
+     CONFIG — edit these two lines to go live
+  ========================================================= */
+  var WHATSAPP_NUMBER  = "1234567890"; // replace with your number, country code, no + or spaces
+  var WHATSAPP_MESSAGE = "Hi! I'm interested in The Online Income Blueprint. Can you tell me more?";
+  var CHECKOUT_URL     = "#enroll";    // replace with your real checkout / payment link
+
+  var waHref = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(WHATSAPP_MESSAGE);
+  document.querySelectorAll(".wa-link").forEach(function(el){ el.href = waHref; });
+
+  ["ctaHero","ctaFinal","ctaSticky"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.href = CHECKOUT_URL;
+  });
+
+  /* Mobile nav toggle */
+  var navToggle = document.getElementById("navToggle");
+  var navMobile = document.getElementById("navMobile");
+  var iconMenu  = document.getElementById("iconMenu");
+  var iconClose = document.getElementById("iconClose");
+
+  function closeNav(){
+    navMobile.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded","false");
+    iconMenu.style.display = "block";
+    iconClose.style.display = "none";
+  }
+
+  navToggle.addEventListener("click", function(){
+    var open = navMobile.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    iconMenu.style.display = open ? "none" : "block";
+    iconClose.style.display = open ? "block" : "none";
+  });
+
+  navMobile.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click", closeNav);
+  });
+
+  /* FAQ accordion */
+  document.querySelectorAll(".faq-item").forEach(function(item){
+    var btn = item.querySelector(".faq-q");
+    var panel = item.querySelector(".faq-a");
+
+    btn.addEventListener("click", function(){
+      var isOpen = item.classList.contains("is-open");
+
+      document.querySelectorAll(".faq-item.is-open").forEach(function(openItem){
+        if(openItem !== item){
+          openItem.classList.remove("is-open");
+          openItem.querySelector(".faq-q").setAttribute("aria-expanded","false");
+          openItem.querySelector(".faq-a").style.maxHeight = null;
+        }
+      });
+
+      if(isOpen){
+        item.classList.remove("is-open");
+        btn.setAttribute("aria-expanded","false");
+        panel.style.maxHeight = null;
+      } else {
+        item.classList.add("is-open");
+        btn.setAttribute("aria-expanded","true");
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  });
+
+  /* Scroll reveal */
+  var revealEls = document.querySelectorAll(".reveal");
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add("in-view");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add("in-view"); });
+  }
+})();
+</script>
+
+</body>
+</html>
